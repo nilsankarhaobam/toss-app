@@ -1,12 +1,13 @@
 import './App.css'
-import Index from './components/exercise01/Index'
+import Sidetest from './components/Exercise02/Sidetest'
+
 
 function App() {
 
 
   return (
     <>
-        <Index/>
+     <Sidetest/>
     </>
   )
 }
