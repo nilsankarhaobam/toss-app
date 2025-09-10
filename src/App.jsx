@@ -1,5 +1,5 @@
 import './App.css'
-import Sidetest from './components/Exercise02/Sidetest'
+import SideTest02 from './components/Exercise02/SideTest02'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-     <Sidetest/>
+     <SideTest02/>
     </>
   )
 }
