@@ -1,11 +1,10 @@
 import './App.css'
-
-import LightDarkMode from './components/Exercise02/LightDarkMode'
+import Label from './components/Exercise02/Label'
 
 function App() {
   return (
     <>
-     <LightDarkMode/>
+     <Label/>
     </>
   )
 }
