@@ -1,13 +1,11 @@
 import './App.css'
-import SideTest02 from './components/Exercise02/SideTest02'
 
+import LightDarkMode from './components/Exercise02/LightDarkMode'
 
 function App() {
-
-
   return (
     <>
-     <SideTest02/>
+     <LightDarkMode/>
     </>
   )
 }
