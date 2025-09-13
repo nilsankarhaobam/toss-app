@@ -1,10 +1,10 @@
 import './App.css'
-import Label from './components/Exercise02/Label'
+import Index from './components/Project_Quiz/Index'
 
 function App() {
   return (
     <>
-     <Label/>
+     <Index/>
     </>
   )
 }
