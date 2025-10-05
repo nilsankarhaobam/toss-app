@@ -1,10 +1,8 @@
 # Toss App
-
-<<<<<<< HEAD
 A fun and visually appealing coin toss game built using **React** and **Tailwind**.
-=======
-A fun and visually appealing coin toss game built using **React**, **Framer Motion**, and **Tailwind CSS**.
->>>>>>> d9288f267c8cd5c55e676f5b8165896827942752
+
+A fun and visually appealing coin toss game built using **React** and **Tailwind CSS**.
+
 
 ## Features
 - Animated spinning coin with realistic flipping effect
