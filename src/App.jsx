@@ -1,10 +1,10 @@
 import './App.css'
-import Index from './components/Project_Quiz/Index'
+import Index from './components/toss/Index'
 
 function App() {
   return (
     <>
-     <Index/>
+      <Index/>
     </>
   )
 }
