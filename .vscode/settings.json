@@ -1,0 +1,4 @@
+{
+  "eslint.validate": ["javascript", "javascriptreact"],
+  "eslint.ignorePatterns": ["**/node_modules/**", "**/*.jsx"]
+}
