@@ -1,15 +1,16 @@
 /** * Toss App * Author: H Nilsankar Singha * License: Apache 2.0 * Website: CodeUniverse * 
  * Description: A fun coin toss game built with React, Framer Motion, and Tailwind CSS. */
 
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, easeInOut } from 'framer-motion';
+import Confetti from 'react-confetti';
 
 const Toss = () => {
   const [result, setResult] = useState("Coin");
   const [btnStatus, setBtnStatus] = useState(false);
   const [isFlipping, setIsFlipping] = useState(false);
   const [rotation, setRotation] = useState(0);
+  const [showConfetti, setShowConfetti] = useState(true); // Confetti visible on load
 
   const tossCoin = (e) => {
     e.preventDefault();
@@ -19,19 +20,24 @@ const Toss = () => {
     const randomNum = Math.floor(Math.random() * 100);
     const outcome = randomNum < 50 ? "Heads" : "Tails";
 
-    // Increment rotation (10 spins)
     setRotation(prev => prev + 3600);
 
-    // Show result after 5 seconds
     setTimeout(() => {
       setResult(outcome);
       setIsFlipping(false);
-      // button remains disabled
     }, 5000);
   };
 
+  // Stop confetti after 5 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => setShowConfetti(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="h-screen bg-gradient-to-tr from-orange-400 to-blue-500 relative flex flex-col justify-center items-center">
+      
+      {showConfetti && <Confetti />}
 
       {/* Top-left website tag */}
       <div className="absolute top-4 left-4">
@@ -86,7 +92,7 @@ const Toss = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        © 2025 CodeUniverse | Built by Nilsankar Singha
+        © 2025 CodeUniverse | Built by H Nilsankar Singha
       </motion.footer>
     </div>
   );
