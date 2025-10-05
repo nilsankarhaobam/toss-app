@@ -1,10 +1,5 @@
-/**
- * Toss App
- * Author: H Nilsankar Singha
- * License: Apache 2.0
- * Website: CodeUniverse
- * Description: A fun coin toss game built with React, Framer Motion, and Tailwind/DaisyUI.
- */
+/** * Toss App * Author: H Nilsankar Singha * License: Apache 2.0 * Website: CodeUniverse * 
+ * Description: A fun coin toss game built with React, Framer Motion, and Tailwind CSS. */
 
 
 import React, { useState } from 'react';
@@ -36,8 +31,8 @@ const Toss = () => {
   };
 
   return (
-    <div className="h-screen bg-gradient-to-tr from-orange-400 to-blue-500 relative">
-  
+    <div className="h-screen bg-gradient-to-tr from-orange-400 to-blue-500 relative flex flex-col justify-center items-center">
+
       {/* Top-left website tag */}
       <div className="absolute top-4 left-4">
         <span className="text-lg font-bold text-white tracking-widest">
@@ -46,7 +41,7 @@ const Toss = () => {
       </div>
 
       {/* Center content */}
-      <div className='flex flex-col justify-center items-center min-h-screen'>
+      <div className='flex flex-col justify-center items-center'>
         <motion.h1
           initial={{ scale: 0.1 }}
           animate={{ scale: 1 }}
@@ -58,7 +53,7 @@ const Toss = () => {
 
         {/* Coin */}
         <motion.div
-          className='bg-amber-300 w-40 h-40 rounded-full shadow-xl border-4 border-yellow-600 flex justify-center items-center'
+          className='bg-amber-300 w-40 h-40 rounded-full shadow-xl border-4 border-yellow-600 flex justify-center items-center mb-6'
           animate={{ rotateY: rotation }}
           transition={{ duration: 5, ease: easeInOut }}
         >
@@ -83,6 +78,16 @@ const Toss = () => {
           TOSS
         </button>
       </div>
+
+      {/* Footer */}
+      <motion.footer
+        className="absolute bottom-4 text-white text-sm"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        © 2025 CodeUniverse | Built by Nilsankar Singha
+      </motion.footer>
     </div>
   );
 };
