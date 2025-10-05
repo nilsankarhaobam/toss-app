@@ -1,28 +1,17 @@
 # Toss App
 
-A fun coin toss game built with **React**, **Framer Motion**, and **Tailwind/DaisyUI**.
-
----
+A fun and visually appealing coin toss game built using **React**, **Framer Motion**, and **Tailwind/DaisyUI**.
 
 ## Features
-- Animated spinning coin
-- Smooth coin result animation
-- Responsive design with gradient background
+- Animated spinning coin with realistic flipping effect
+- Smooth coin result animation with delay
 - Button disabled during toss to prevent cheating
 - Top-left website tag: CodeUniverse
-
----
+- Responsive design with gradient background
 
 ## Author
 **H Nilsankar Singha**  
-Website: [CodeUniverse](https://your-website.com)
+Website: CodeUniverse
 
----
-
-## How to Run Locally
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/<USERNAME>/toss-app.git
-
+## License
+This project is licensed under the **Apache 2.0 License**.
